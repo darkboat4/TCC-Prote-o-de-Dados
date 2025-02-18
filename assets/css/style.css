@@ -6,13 +6,18 @@
 
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter Semi-Bold";
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 header{
-    width: 100vw;
+    width: 99vw;
+    min-width: 99vw;
     height: 8vh;
     background: rgb(127,0,8);
     background: linear-gradient(73deg, rgba(127,0,8,1) 0%, rgba(191,0,12,1) 100%);
@@ -27,31 +32,36 @@ header div{
     width: 80vw;
     height: auto;
     display: flex;
-    justify-content: flex-start;
-    gap: 55px;
+    justify-content: space-around;
     align-items: center;
 }
 
 header p{
     font-family: "Poppins";
     font-weight: 600;
-    font-size: 35px;
-    margin-right: 50px;
-
+    font-size: 1.5em;
+    margin-left: 5px;
 }
 
 header div a{
     text-decoration: none;
     color: white;
     font-family: "Inter Semi-Bold";
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 header img {
-    margin-right: auto; /* Empurra a imagem para mais à esquerda */
-    margin-top: 5px;
+    object-fit: contain;
+    width: 7vh;
+    height: 7vh;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 main .container1{
@@ -104,24 +114,64 @@ main .title{
 }
 
 main .container2{
-
         position: relative;
-        width: 100vw;
+        width: 60vw;
         height: 75vh;
-        background-image: url(../img/Rectangle\ 8.png);
-        background-repeat: no-repeat no-repeat;
-        background-size: cover; 
+        z-index: 1;
     
 }
 
-main .box-card {
+main .container2 .box-card {
     position: absolute;
-    top: 75px;  /* Ajuste a posição superior */
+    top: 5%;  /* Ajuste a posição superior */
     left: 75px; /* Ajuste a posição esquerda */
     background-color: white;
-    height: 530px;
-    width: 478px;
+    height: 500px;
+    width: 400px;
     border-radius: 25px;
+    z-index: 3;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    flex-direction:column;
+
+    font-size: 2em;
+
+    border: solid 1px #7F0008;
+    color: #7F0008;
+
+
+}
+
+main .container2 .box-card button{
+    margin-top: 30px;
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    border: 3px solid #7F0008;
+    color: #7F0008;
+    border-radius: 20px;
+    font-size: .8em;
+}
+
+main .container2 .box-img{
+    z-index: 2;
+    background-color: purple;
+    width:420px;
+    height: 450px;
+    border-radius: 25px;
+    position: absolute;
+    top: 20%;
+    left: 450px;
+
+    background-image: url(../img/menina_ia.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main .title2{
