@@ -1,5 +1,10 @@
 *{padding: 0; margin: 0;}
 
+@font-face{
+    font-family: 'Inter Semi-Bold';
+    src: url('../font/inter-semi-bold.ttf')
+
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
@@ -22,23 +27,43 @@ header div{
     width: 80vw;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 55px;
     align-items: center;
+}
+
+header p{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 35px;
+    margin-right: 50px;
+
 }
 
 header div a{
     text-decoration: none;
     color: white;
+    font-family: "Inter Semi-Bold";
+    font-size: 25px;
 }
+
+header img {
+    margin-right: auto; /* Empurra a imagem para mais à esquerda */
+    margin-top: 5px;
+}
+
+
 
 main .container1{
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
     background-image: url(../img/BG.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover; 
 }
 
 main .container1 div{
-    width: 25vw;
+    width: 100vw;
     height: 40vh;
     /* background-color: red; */
     /* border: 1px solid black; */
@@ -58,12 +83,77 @@ main .container1 div p{
 
 
 main .container1 div button{
-        width: 100px;
-        height: 60px;
+        width: 163.89px;
+        height: 65px;
         border: none;
         font-size: 1.5em;
         background: rgb(127,0,8);
         background: linear-gradient(73deg, rgba(127,0,8,1) 0%, rgba(191,0,12,1) 100%);
         border-radius: 20px;
         color: white;
+}
+
+main .title{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main .container2{
+
+        position: relative;
+        width: 100vw;
+        height: 75vh;
+        background-image: url(../img/Rectangle\ 8.png);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover; 
+    
+}
+
+main .box-card {
+    position: absolute;
+    top: 75px;  /* Ajuste a posição superior */
+    left: 75px; /* Ajuste a posição esquerda */
+    background-color: white;
+    height: 530px;
+    width: 478px;
+    border-radius: 25px;
+}
+
+main .title2{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.mapBox {
+    display: none; /* Inicialmente oculto */
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.mapBox iframe {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: 100%; /* Ocupa toda a altura do contêiner */
+    border-radius: 10px;
+}
+
+.instituicoesparceiras{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
